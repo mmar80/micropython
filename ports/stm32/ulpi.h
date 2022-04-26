@@ -3,7 +3,7 @@
  *
  * The MIT License (MIT)
  *
- * Copyright (c) 2021 Robert Hammelrath
+ * Copyright (c) 2022 Damien P. George
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,12 +23,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#ifndef MICROPY_INCLUDED_MIMXRT_DMACHANNEL_H
-#define MICROPY_INCLUDED_MIMXRT_DMACHANNEL_H
+#ifndef MICROPY_INCLUDED_STM32_ULPI_H
+#define MICROPY_INCLUDED_STM32_ULPI_H
 
-#include "py/runtime.h"
+int ulpi_enter_low_power(void);
+int ulpi_leave_low_power(void);
 
-int allocate_dma_channel(void);
-void free_dma_channel(int n);
-
-#endif // MICROPY_INCLUDED_MIMXRT_DMACHANNEL_H
+#endif // MICROPY_INCLUDED_STM32_ULPI_H
